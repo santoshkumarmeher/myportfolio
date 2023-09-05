@@ -20,9 +20,11 @@
   }
   .navbar a{
     text-decoration: none;
+    color: white;
   }
   .logo{
     padding: 10px 10px;
+    width: 180px;
   }
   .navbar div{
     margin-top: 10px;
@@ -38,17 +40,14 @@
   .dropdown{
     width: 100%;
     text-align: center; 
- 
-
- 
   }
   .dropdown ul li{
     display: inline;
     justify-content: space-around;
-    border: 1px solid aqua;
+    border: 2px solid aqua;
     border-radius: 25px;
     padding: 5px 5px;
-    font-size: 7px;
+    font-size: 6px;
     color: white;
   }
   .dropdown ul li:hover{
@@ -121,11 +120,13 @@
     width: 50%;
     height: 20vh;
     display: flex;
+    margin-top: 30px;
     flex-direction: column;
     justify-content: space-around;
   }
   .contact-form div{
     text-align: center;
+    margin:5px 0px;
   }
   .contact-form div a{
     margin: auto;
@@ -140,14 +141,56 @@
     border-radius: 15px;
 
   }
-  .contact-form div a:hov{
+  .contact-form div a:hover{
     background-color: aqua;
     color: black;
   }
 
+  /* About Page */
+  .profile{
+    width: 50%;
+    margin: auto;
+    padding-top: 20%;
+
+  }
+  .profile img{
+    width:128px;
+    height: 164px;
+    border: 3px solid aqua;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .aboutme{
+    color: white;
+    padding-top: 10px;
+    text-align: center;
+  }
+  .summary{
+    color: white;
+  }
+  .about-details{
+    color: white;
+    background-color: black;
+  }
+  .about-heading{
+    font-size: 17px;
+    text-align: center;
+
+  }
+
+  .para{
+    text-align: left;
+    font-size: 10px;
+    padding: 20px;
+    
+  }
+
+
 
   
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 775px) {
     /* For desktop: */
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
@@ -177,11 +220,13 @@
       padding: 10px 0px;
     }
     .dropdown ul li{
-      font-size: 15px;
-      padding: 5px 10px;
+      font-size: 11px;
+      padding: 5px 5px;
     }
     .dropdown ul{
-      justify-content: center;
+      /* justify-content: center; */
+      position: absolute;
+      right: 20px;
     }
     .dropdown ul a{
       padding: 0 5px;
@@ -190,20 +235,37 @@
     .navbar{
       display: flex;
     }
+    .logo{
+      width: 180px;
+    }
     .navbar div{
-      width: 50%;
       display: flex;
+      width: 70%;
       justify-content: space-between;
     }
+
+    /* About Page */
+    .profile{
+      margin-left: 0;
+      padding-top: 10%;
+    }
+    .profile img{
+      margin-left: 10%;
+    }
   }
-  @media only screen and (min-width: 305px) and (max-width:768px){
+  @media only screen and (min-width: 370px) and (max-width:774px){
     .col-12{
       .dropdown ul li{
         font-size: 10px;
         padding: 5px 10px;
       }
+
       .image img{
         width: 50%;
+      }
+          /* About Page */
+      .profile{
+        padding-top: 50px;
       }
 
     }

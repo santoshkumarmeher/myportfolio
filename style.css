@@ -18,6 +18,9 @@
     width: 100%;
     display: inline-block;
   }
+  .navbar a{
+    text-decoration: none;
+  }
   .logo{
     padding: 10px 10px;
   }
@@ -127,6 +130,7 @@
   .contact-form div a{
     margin: auto;
     display: block;
+    text-decoration: none;
     text-align: center;
     width: 80px;
     font-size: 10px;

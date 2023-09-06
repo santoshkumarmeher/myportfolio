@@ -200,6 +200,10 @@
   .ul{
     list-style: disc;
   }
+  .ul-sub{
+    font-size: 8px;
+    list-style: circle;
+  }
   /* Resume Page */
   .btn{
     background-color: black;

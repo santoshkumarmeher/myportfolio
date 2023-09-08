@@ -101,6 +101,28 @@
     /* padding: 15px; */
     text-align: justify;
   }
+  .social{
+    width: 200px;
+    height: 30px;
+    padding-top: 30px;
+    margin: auto;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+  }
+  .socialdiv p{
+    color: aqua;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .social img{
+    width: 20px;
+    
+  }
+  .socialdiv{
+    background-color: black;
+  }
 
   /* Contact Page */
   .contact{
@@ -286,12 +308,18 @@
       padding-left: 25%;
       padding-right: 25%;
     }
+    .socialdiv p{
+      padding-top: 140px;
+    }
 
     /* About Page */
     .profile{
       display: block;
       margin: auto;
       padding-top: 10%;
+    }
+    .about-details{
+      
     }
 
   }

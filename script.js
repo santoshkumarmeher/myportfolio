@@ -45,7 +45,7 @@ window.onload = function() {
         var toRotate = elements[i].getAttribute('data-type');
         var period = elements[i].getAttribute('data-period');
         if (toRotate) {
-          new TxtType(elements[i], JSON.parse(toRotate), period);
+            new TxtType(elements[i], JSON.parse(toRotate), period);
         }
     }
     // INJECT CSS
@@ -54,3 +54,27 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };
+
+class SpecialHeader extends HTMLElement{
+    connectedCallback(){
+        this.innerHTML=`
+        <div class="header col-12">
+            <div class="navbar">
+                <div class="logo"><a href="index.html"><span style="color: aqua;">S</span>antosh <span style="color: aqua;">K</span>. <span style="color: aqua;">M</span>eher</a></div>
+                <div class="dropdown">
+        
+                    <ul>
+                        <a href="index.html"><li>Home</li></a>
+                        <a href="about.html"><li>About</li></a>
+                        <a href="projects.html"><li>Projects</li></a>
+                        <a href="experience.html"><li>Experience</li></a>
+                        <a href="resume.html"><li>Resume</li></a>
+                        <a href="contact.html"><li>Contact</li></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        `
+    }
+}
+customElements.define('special-header',SpecialHeader)

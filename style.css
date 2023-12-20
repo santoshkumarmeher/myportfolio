@@ -1,342 +1,429 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Noto+Sans+Display:wght@300&family=Poppins:wght@200;300;500&family=Roboto+Mono:wght@300&family=Source+Code+Pro:wght@700;900&display=swap');
-*{
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
 }
+
 /* For mobile phones: */
 [class*="col-"] {
+  width: 100%;
+}
+
+.header.col-12 {
+  background-color: black;
+  color: white;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.navbar {
+  width: 100%;
+  display: inline-block;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo {
+  padding: 10px 10px;
+  width: 180px;
+}
+
+.navbar div {
+  margin-top: 10px;
+  display: inline-block;
+  justify-content: center;
+
+}
+
+.container {
+  height: 100vh;
+  /* width: 100vw; */
+  background-color: black;
+}
+
+.dropdown {
+  width: 100%;
+  text-align: center;
+}
+
+.dropdown ul li {
+  display: inline;
+  justify-content: space-around;
+  border: 2px solid aqua;
+  border-radius: 25px;
+  padding: 5px 5px;
+  font-size: 6px;
+  color: white;
+}
+
+.dropdown ul li:hover {
+  background-color: aqua;
+  color: black;
+}
+
+.dropdown ul {
+  display: inline;
+  justify-content: center;
+
+}
+
+.typecss {
+  padding: 10vh 5vw;
+}
+
+.typecss p {
+  color: white;
+  font-size: 1rem;
+}
+
+.typewrite {
+  font-size: 0.9rem;
+  color: aqua;
+}
+
+.image img {
+  display: block;
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+
+}
+
+.name {
+  background-color: black;
+}
+
+.name p {
+  font-size: 8vw;
+}
+
+.name h1 {
+  font-size: 6vw;
+}
+
+.name p, h1 {
+  text-align: center;
+}
+
+.dropdown ul {
+  display: inline-block;
+}
+
+.summary {
+  color: white;
+  background-color: black;
+  padding: 20px;
+  font-size: 10pt;
+  /* padding: 15px; */
+  text-align: justify;
+}
+
+.social {
+  width: 200px;
+  height: 30px;
+  padding-top: 30px;
+  margin: auto;
+  /* background-color: rebeccapurple; */
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+}
+
+.socialdiv p {
+  color: aqua;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.social img {
+  width: 20px;
+
+}
+
+.socialdiv {
+  background-color: black;
+}
+
+/* Contact Page */
+.contact {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact h1 {
+  padding-top: 60px;
+  color: white;
+  font-size: 20px;
+}
+
+.contact-form {
+  margin: auto;
+  width: 50%;
+  height: 20vh;
+  display: flex;
+  margin-top: 30px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.contact-form div {
+  text-align: center;
+  margin: 5px 0px;
+}
+
+.contact-form div a {
+  margin: auto;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  width: 80px;
+  font-size: 10px;
+  border: 2px solid aqua;
+  color: white;
+  padding: 5px;
+  border-radius: 15px;
+
+}
+
+.contact-form div a:hover {
+  background-color: aqua;
+  color: black;
+}
+
+/* About Page */
+.profile {
+  width: 50%;
+  margin: auto;
+  padding-top: 20%;
+
+}
+
+.profile img {
+  width: 128px;
+  height: 164px;
+  border: 3px solid aqua;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.aboutme {
+  color: white;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.summary {
+  color: white;
+}
+
+.about-details {
+  color: white;
+  background-color: black;
+}
+
+.about-heading {
+  font-size: 17px;
+  color: aqua;
+  text-align: center;
+
+}
+
+.para {
+  text-align: left;
+  font-size: 15px;
+  padding: 20px;
+  text-decoration: none;
+
+}
+
+.para a {
+  color: white;
+  text-decoration: none;
+}
+
+
+/* Project Page */
+/* .topdiv {
+  padding-top: 20%;
+} */
+
+.ul {
+  list-style: disc;
+}
+
+.ul-sub {
+  font-size: 10px;
+  list-style: circle;
+}
+
+/* Resume Page */
+.btn {
+  background-color: black;
+  text-decoration: none;
+  display: block;
+  width: 110px;
+  margin: auto;
+  color: aqua;
+  border: 2px solid aqua;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.btn:hover {
+  background-color: aqua;
+  color: black;
+  font-weight: bold;
+}
+
+
+
+
+@media only screen and (min-width: 775px) {
+
+  /* For desktop: */
+  .col-1 {
+    width: 8.33%;
+  }
+
+  .col-2 {
+    width: 16.66%;
+  }
+
+  .col-3 {
+    width: 25%;
+  }
+
+  .col-4 {
+    width: 33.33%;
+  }
+
+  .col-5 {
+    width: 41.66%;
+  }
+
+  .col-6 {
+    width: 50%;
+  }
+
+  .col-7 {
+    width: 58.33%;
+  }
+
+  .col-8 {
+    width: 66.66%;
+  }
+
+  .col-9 {
+    width: 75%;
+  }
+
+  .col-10 {
+    width: 83.33%;
+  }
+
+  .col-11 {
+    width: 91.66%;
+  }
+
+  .col-12 {
     width: 100%;
   }
-  .header.col-12{
-    background-color:black;
-    color: white;
-    font-size: 1.2rem;
-    text-align: left;
+
+  .image {
+    float: right;
   }
-  .navbar{
+
+  .image img {
     width: 100%;
-    display: inline-block;
   }
-  .navbar a{
-    text-decoration: none;
-    color: white;
+
+  .name p {
+    font-size: 4vw;
   }
-  .logo{
-    padding: 10px 10px;
+
+  .name h1 {
+    font-size: 3vw;
+  }
+
+  .dropdown {
+    padding: 10px 0px;
+  }
+
+  .dropdown ul li {
+    font-size: 11px;
+    padding: 5px 5px;
+  }
+
+  .dropdown ul {
+    /* justify-content: center; */
+    position: absolute;
+    right: 20px;
+  }
+
+  .dropdown ul a {
+    padding: 0 5px;
+    /* padding: 10px 5px; */
+  }
+
+  .navbar {
+    display: flex;
+  }
+
+  .logo {
     width: 180px;
   }
-  .navbar div{
-    margin-top: 10px;
-    display: inline-block;
-    justify-content: center;
 
-  }
-  .container{
-    height: 100vh;
-    /* width: 100vw; */
-    background-color: black;
-  }
-  .dropdown{
-    width: 100%;
-    text-align: center; 
-  }
-  .dropdown ul li{
-    display: inline;
-    justify-content: space-around;
-    border: 2px solid aqua;
-    border-radius: 25px;
-    padding: 5px 5px;
-    font-size: 6px;
-    color: white;
-  }
-  .dropdown ul li:hover{
-    background-color: aqua;
-    color: black;
-  }
-  .dropdown ul{
-    display: inline;
-    justify-content: center;
-
-  }
-  .typecss{
-    padding: 10vh 5vw;
-  }
-  .typecss p{
-    color: white;
-    font-size: 1rem;
-  }
-  .typewrite{
-    font-size: 0.9rem;
-    color: aqua;
-  }
-  .image img{
-    display: block;
-    padding-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
+  .navbar div {
+    display: flex;
     width: 70%;
-
-  }
-  .name{
-    background-color: black;
-  }
-  .name p{
-    font-size: 8vw;
-  }
-  .name h1{
-    font-size: 6vw;
-  }
-  .name p,h1{
-    text-align: center;
-  }
-  .dropdown ul{
-    display: inline-block;
-  }
-  .summary{
-    color: white;
-    background-color: black;
-    padding: 20px;
-    font-size: 10pt;
-    /* padding: 15px; */
-    text-align: justify;
-  }
-  .social{
-    width: 200px;
-    height: 30px;
-    padding-top: 30px;
-    margin: auto;
-    /* background-color: rebeccapurple; */
-    display: flex;
-    justify-content: space-around;
-    background-color: black;
-  }
-  .socialdiv p{
-    color: aqua;
-    text-align: center;
-    padding-top: 10px;
-  }
-  .social img{
-    width: 20px;
-    
-  }
-  .socialdiv{
-    background-color: black;
+    justify-content: space-between;
   }
 
-  /* Contact Page */
-  .contact{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+  .pad75 {
+    padding-left: 25%;
+    padding-right: 25%;
   }
 
-  .contact h1{
-    padding-top: 60px;
-    color: white;
-    font-size: 20px;
-  }
-  .contact-form{
-    margin: auto;
-    width: 50%;
-    height: 20vh;
-    display: flex;
-    margin-top: 30px;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  .contact-form div{
-    text-align: center;
-    margin:5px 0px;
-  }
-  .contact-form div a{
-    margin: auto;
-    display: block;
-    text-decoration: none;
-    text-align: center;
-    width: 80px;
-    font-size: 10px;
-    border: 2px solid aqua;
-    color: white;
-    padding: 5px;
-    border-radius: 15px;
-
-  }
-  .contact-form div a:hover{
-    background-color: aqua;
-    color: black;
+  .socialdiv p {
+    padding-top: 140px;
   }
 
   /* About Page */
-  .profile{
-    width: 50%;
-    margin: auto;
-    padding-top: 20%;
-
-  }
-  .profile img{
-    width:128px;
-    height: 164px;
-    border: 3px solid aqua;
-    border-radius: 10px;
+  .profile {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .aboutme{
-    color: white;
-    padding-top: 10px;
-    text-align: center;
-  }
-  .summary{
-    color: white;
-  }
-  .about-details{
-    color: white;
-    background-color: black;
-  }
-  .about-heading{
-    font-size: 17px;
-    color: aqua;
-    text-align: center;
-
-  }
-  .para{
-    text-align: left;
-    font-size: 15px;
-    padding: 20px;
-    text-decoration: none;
-    
-  }
-  .para a{
-    color: white;
-    text-decoration: none;
-  }
-
-
-  /* Project Page */
-  .topdiv{
-    padding-top: 20%;
-  }
-  .ul{
-    list-style: disc;
-  }
-  .ul-sub{
-    font-size: 10px;
-    list-style: circle;
-  }
-  /* Resume Page */
-  .btn{
-    background-color: black;
-    text-decoration: none;
-    display: block;
-    width: 110px;
     margin: auto;
-    color: aqua;
-    border: 2px solid aqua;
-    border-radius: 30px;
-    padding: 10px;
-  }
-  .btn:hover{
-    background-color: aqua;
-    color: black;
-    font-weight: bold;
+    padding-top: 10%;
   }
 
+  .about-details {}
 
+}
 
-  
-  @media only screen and (min-width: 775px) {
-    /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {
+@media only screen and (min-width: 370px) and (max-width:774px) {
+  .col-12 {
+    .dropdown ul li {
+      font-size: 10px;
+      padding: 5px 10px;
+    }
+
+    .image img {
       width: 50%;
-    }
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {
-      width: 75%;
-    }
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-    .image{
-      float: right;
-    }
-    .image img{
-      width: 100%;
-    }
-    .name p{
-      font-size: 4vw;
-    }
-    .name h1{
-      font-size: 3vw;
-    }
-    .dropdown{
-      padding: 10px 0px;
-    }
-    .dropdown ul li{
-      font-size: 11px;
-      padding: 5px 5px;
-    }
-    .dropdown ul{
-      /* justify-content: center; */
-      position: absolute;
-      right: 20px;
-    }
-    .dropdown ul a{
-      padding: 0 5px;
-      /* padding: 10px 5px; */
-    }
-    .navbar{
-      display: flex;
-    }
-    .logo{
-      width: 180px;
-    }
-    .navbar div{
-      display: flex;
-      width: 70%;
-      justify-content: space-between;
-    }
-    .pad75{
-      padding-left: 25%;
-      padding-right: 25%;
-    }
-    .socialdiv p{
-      padding-top: 140px;
     }
 
     /* About Page */
-    .profile{
-      display: block;
-      margin: auto;
-      padding-top: 10%;
-    }
-    .about-details{
-      
+    .profile {
+      padding-top: 50px;
     }
 
   }
-  @media only screen and (min-width: 370px) and (max-width:774px){
-    .col-12{
-      .dropdown ul li{
-        font-size: 10px;
-        padding: 5px 10px;
-      }
-
-      .image img{
-        width: 50%;
-      }
-          /* About Page */
-      .profile{
-        padding-top: 50px;
-      }
-
-    }
-  }
+}

@@ -1,0 +1,25 @@
+.project{
+    background-color: black;
+    display: flex;
+}
+.gui {
+    /* width: 30vw; */
+    padding: 30px;
+    text-align: center;
+    /* border: 2px solid aqua; */
+
+}
+.gui a{
+    color: white;
+    text-decoration: none;
+}
+.gui a:hover{
+    color: aqua;
+}
+.screenshot img{
+    padding: 10px;
+    border: 2px solid aqua;
+    border-radius: 10px;
+    width: 100%;
+
+}
